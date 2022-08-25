@@ -2,7 +2,7 @@
 	<h1>S2GBADecomp</h1>
 	<p>
 		<img src="https://github.com/Sim2Team/Sim2Team.github.io/raw/main/assets/images/sims2GBACover.png" alt="Cover"><br>
-		<b>This is a work in progress Disassembly and Decompilation of The Sims 2 for the Game Boy Advance.</b><br>
+		<b>This is a work in progress matching Disassembly and Decompilation of The Sims 2 for the Game Boy Advance.</b><br>
 	</p><hr>
 </div>
 
@@ -11,7 +11,7 @@ Because we are not too much experienced with disassembly and decompilation thing
 
 There won't be any assets such as Graphics in this repository for copyright reasons, so you will need to provide your own baserom to extract the Assets from it.
 
-**If you are interested into this and the progress, feel free to join Universal-Team's [Discord Server](https://universal-team.net/discord) and join the `S2GBADecomp` Thread in the `#Sim2Team` channel.**
+**If you are interested into this and the progress, feel free to join the tssoret [Discord Server](https://discord.gg/TR6BfHRqqj).**
 <hr>
 
 
@@ -22,7 +22,7 @@ There won't be any assets such as Graphics in this repository for copyright reas
 
 ## Tools
 **Here some information related to the Tools that will be used.**
-- Tools that aren't related to disassembly / decompilation such as extracting Text, Music etc will be made in JavaScript for [Deno.js](https://deno.land/) inside the `tools/scripts` directory.
+- Tools that aren't related to disassembly / decompilation such as extracting Text, Music etc will be made in JavaScript for [Deno.js](https://deno.land/) inside the `tools/scripts` directory. They will also exist on the [Tssoret-Tools](https://github.com/tssoret/Tssoret-Tools) Repository, because eventually it will be useful when the other games get a disassembly / decomp in the future too.
 - [agbcc](https://github.com/pret/agbcc) will be used to compile and link the code into a Game Boy Advance `(.gba)` binary.
 <hr>
 
