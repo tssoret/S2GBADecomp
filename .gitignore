@@ -1,0 +1,10 @@
+build/*
+data/krawall/*
+tools/buildtools/agbcc/*
+tools/buildtools/libs/*
+
+*.gba
+*.elf
+*.map
+
+libs/krawall/build/*

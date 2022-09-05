@@ -1,0 +1,30 @@
+/* Initially created for now, so the things are better shift-able in the future. */
+
+/* Krawall EWRAM Data. */
+gKrawall_LBuffer               = 0x02000000;
+gKrawall_RBuffer               = 0x02000450;
+gKrawall_NextSample            = 0x020008A0;
+gKrawall_CurMixBlock           = 0x020008A4;
+gKrawall_Active                = 0x020008A8;
+gKrawall_DMABlock              = 0x020008AC;
+gKrawall_Channels              = 0x020008B0;
+gKrawall_SoundTimerCountBackup = 0x02000E30;
+gKrawall_VolClipTable          = 0x02000E34;
+gKrawall_VolClipTableMid       = 0x02001234;
+gKrawall_SoundTimerFunc        = 0x02001634;
+gKrawall_SoundTimerSpeed       = 0x02001638;
+gKrawall_SoundTimerCount       = 0x0200163A;
+gKrawall_MusicVolume           = 0x0200163C;
+gKrawall_Player                = 0x02001640;
+gKrawall_PlayerInstrBased      = 0x02001660;
+gKrawall_PlayerChannel         = 0x02001674;
+gKrawall_PlayerBackup          = 0x02001E44;
+gKrawall_MusicVolumeTarget     = 0x02002648;
+gKrawall_MusicVolumeFadeInc    = 0x0200264C;
+gKrawall_Callback              = 0x02002650;
+gKrawall_Effchns               = 0x02002654;
+
+/* Allocator. */
+gEWRAMStart                    = 0x020028AC;
+gEWRAMAllocStart               = 0x020028B0;
+gEWRAMAllocData                = 0x020028C0;
