@@ -1,10 +1,13 @@
 build/*
+
 data/krawall/*
-tools/buildtools/agbcc/*
-tools/buildtools/libs/*
+
+libs/krawall/build/*
+
+tools/buildtools/agbcc/bin/*
+tools/buildtools/agbcc/include/*
+tools/buildtools/libs/*.a
 
 *.gba
 *.elf
 *.map
-
-libs/krawall/build/*
