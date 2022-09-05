@@ -16,7 +16,7 @@ SECTIONS {
 		build/asm/unsorted/code.o(.text);
 		build/asm/menus/startmenus/skills_menu.o(.text);
 		build/asm/unsorted/code1.o(.text);
-		build/asm/flash.o(.text);
+		build/source/flash.o(.text);
 		build/asm/unsorted/code2.o(.text);
 		build/asm/menus/boardroom_menu.o(.text);
 		build/asm/unsorted/code3.o(.text);

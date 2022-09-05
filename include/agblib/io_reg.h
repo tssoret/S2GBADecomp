@@ -6,6 +6,8 @@
 #define REG_BASE 0x4000000 // I/O register base address.
 
 /* I/O register offsets. */
+#define REG_OFFSET_DISPSTAT    0x4
+
 #define REG_OFFSET_TMCNT       0x100
 #define REG_OFFSET_TMCNT_L     0x100
 #define REG_OFFSET_TMCNT_H     0x102
@@ -32,6 +34,8 @@
 #define REG_OFFSET_WAITCNT     0x204
 
 /* I/O register addresses. */
+#define REG_ADDR_DISPSTAT    (REG_BASE + REG_OFFSET_DISPSTAT)
+
 #define REG_ADDR_TMCNT       (REG_BASE + REG_OFFSET_TMCNT)
 #define REG_ADDR_TMCNT_L     (REG_BASE + REG_OFFSET_TMCNT_L)
 #define REG_ADDR_TMCNT_H     (REG_BASE + REG_OFFSET_TMCNT_H)
@@ -58,6 +62,8 @@
 #define REG_ADDR_WAITCNT     (REG_BASE + REG_OFFSET_WAITCNT)
 
 /* I/O registers. */
+#define REG_DISPSTAT    (*(vu16 *)REG_ADDR_DISPSTAT)
+
 #define REG_TMCNT(n)    (*(vu16 *)(REG_ADDR_TMCNT + ((n) * 4)))
 #define REG_TMCNT_L(n)  (*(vu16 *)(REG_ADDR_TMCNT_L + ((n) * 4)))
 #define REG_TMCNT_H(n)  (*(vu16 *)(REG_ADDR_TMCNT_H + ((n) * 4)))
@@ -84,6 +90,13 @@
 #define REG_WAITCNT     (*(vu16 *)REG_ADDR_WAITCNT)
 
 
+/* DISPSTAT. */
+#define DISPSTAT_VBLANK      0x0001 // in V-Blank.
+#define DISPSTAT_HBLANK      0x0002 // in H-Blank.
+#define DISPSTAT_VCOUNT      0x0004 // V-Count match.
+#define DISPSTAT_VBLANK_INTR 0x0008 // V-Blank interrupt enabled.
+#define DISPSTAT_HBLANK_INTR 0x0010 // H-Blank interrupt enabled.
+#define DISPSTAT_VCOUNT_INTR 0x0020 // V-Count interrupt enabled.
 
 /* Timer. */
 #define TIMER_1CLK        0x00

@@ -1397,7 +1397,7 @@ FUN_080443E0: @ 0x080443E0
 	movs r0, #0
 	movs r1, #0x18
 	mov r2, sp
-	bl FUN_0800B3A0
+	bl Flash_ReadFlashSector
 	cmp r0, #0
 	beq _08044440
 	ldr r4, _0804443C @ => 0x03005E20
@@ -1432,7 +1432,7 @@ _08044424:
 	lsls r1, r1, #5
 	ldr r2, _0804443C @ => 0x03005E20
 	movs r0, #0
-	bl FUN_0800B3EC
+	bl Flash_HandleProgramSectorWrite
 	cmp r0, #0
 	beq _08044440
 	movs r0, #1
@@ -1457,7 +1457,7 @@ FUN_0804444C: @ 0x0804444C
 	bl FUN_0802C9DC
 	ldr r5, _080444A0 @ => 0x03005E20
 	str r0, [r5, #0x18]
-	bl FUN_0800B390
+	bl Flash_CheckForFlashMemory
 	bl FUN_0804475C
 	cmp r0, #0
 	bne _0804448E
@@ -1472,7 +1472,7 @@ _08044476:
 	adds r0, r5, #0
 	movs r1, #0x80
 	lsls r1, r1, #5
-	bl FUN_0800B3EC
+	bl Flash_HandleProgramSectorWrite
 	movs r0, #0x80
 	lsls r0, r0, #5
 	adds r5, r5, r0
@@ -1788,7 +1788,7 @@ FUN_080446C0: @ 0x080446C0
 	lsls r1, r1, #5
 	ldr r2, _080446D8 @ => 0x03005E20
 	ldr r2, [r2, #0x18]
-	bl FUN_0800B3A0
+	bl Flash_ReadFlashSector
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -1803,7 +1803,7 @@ FUN_080446DC: @ 0x080446DC
 	lsls r1, r1, #5
 	ldr r2, _080446F4 @ => 0x03005E20
 	ldr r2, [r2, #0x18]
-	bl FUN_0800B3EC
+	bl Flash_HandleProgramSectorWrite
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -1857,7 +1857,7 @@ _0804472E:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	movs r0, #0
-	bl FUN_0800B3EC
+	bl Flash_HandleProgramSectorWrite
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -1872,7 +1872,7 @@ FUN_0804475C: @ 0x0804475C
 	movs r0, #0
 	movs r1, #0x18
 	adds r2, r4, #0
-	bl FUN_0800B3A0
+	bl Flash_ReadFlashSector
 	adds r5, r0, #0
 	movs r2, #0
 	movs r1, #0xc
