@@ -13,7 +13,7 @@
 
 - ***Please support the official version. You can usually find copies on eBay.***
 
-**If you are interested into this and the progress, feel free to join the [Sim2Server Discord Server](https://discord.gg/TR6BfHRqqj).**
+**If you are interested into this and the progress, feel free to join the [Discord Server](https://sim2team.github.io/wiki/server).**
 
 ---
 
